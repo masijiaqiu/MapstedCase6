@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>MAPSTED Test Case 6</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" th:href="@{/css/style.css}"> 
+<link rel="stylesheet" th:href="@{/css/fonts.css}">
+<link rel="stylesheet" th:href="@{/css/font-awesome.min.css}"> 
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/img/skyscraper.jpg');
+    min-height: 100%;
+}
+</style>
+
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+        <h1><b>Masijia Qiu</b></h3>
+        <h1><b>Test Case #6</b></h3>
+        <p>Software Engineer Coop at MAPSTED CORP.</p>
+    </header>
+
+
+    <div class="w3-padding-32 w3-content w3-text-grey" id="test cases" style="margin-bottom:64px">
+        <h2>Test Cases</h2>
+        <hr class="w3-opacity">
+        <div class="w3-section">
+            <p th:text = "'Total purchase costs for Samsung manufacture devices: ' + ${answer1}"></p>
+            <p th:text = "'Total number of times item (item_id = 47) was purchased: ' + ${answer2}"/></p>
+            <p th:text = "'Total purchase costs for item’s in the category (item_category_id = 7): ' + ${answer3}"/></p>
+            <p th:text = "'Total purchase costs in Ontario: ' + ${answer4}"/></p>
+            <p th:text = "'Total purchase costs in the United States: ' + ${answer5}"/></p>
+            <p th:text = "'The building which has the most total purchase costs: ' + ${answer6}"/></p>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+        <h2>Contact Me</h2>
+        <hr class="w3-opacity">
+
+        <div class="w3-section">
+            <p>Location: Waterloo, CA</p>
+            <p>Phone: +1 5197292206</p>
+            <p>Email: m23qiu@uwaterloo.ca</p>
+        </div>
+        
+    <!-- End Contact Section -->
+    </div>  
+  
+
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+</body>
+</html>
+
